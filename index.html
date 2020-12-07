@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Battery</title>
+    <script src="script.js"></script>
+    <style>
+        body, html {
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        #content {
+            background-color: #000;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        #percentage {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            font-family: system-ui;
+            mix-blend-mode: difference;
+            transition: .2s;
+        }
+
+        #filler {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #0f0;
+            transition: .2s;
+        }
+
+        #chargingicon {
+            color: #fff;
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            transition: .2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="filler"></div>
+        <span id="percentage" style="color:#fff;">...</span>
+        <i class="material-icons" id="chargingicon" style="opacity:0;">flash_on</i>
+    </div>
+</body>
+</html>
