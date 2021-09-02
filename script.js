@@ -52,3 +52,9 @@ function batteryinit(localBattery) {
 function errorhandler() {
     percentageElem.textContent = "error";
 }
+
+function registerServiceWorker() {
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/battery-2.0/sw.js', {scope: '/battery-2.0/'})
+    }
+}

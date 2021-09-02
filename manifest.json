@@ -1,0 +1,17 @@
+{
+    "short_name": "Battery",
+    "name": "Battery Status",
+    "icons": [
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "background_color": "#000000",
+    "display": "fullscreen",
+    "scope": "/battery-2.0/",
+    "theme_color": "#00FF00",
+    "description": "Battery status information"
+  }
