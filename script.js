@@ -8,6 +8,8 @@ window.onload = () => {
     fillerElem = document.querySelector("#filler");
     chargingElem = document.querySelector("#chargingicon");
     navigator.getBattery().then(batteryinit, errorhandler);
+
+    registerServiceWorker()
 }
 
 window.onclick = () => {
