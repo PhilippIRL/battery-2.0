@@ -1,6 +1,6 @@
 this.addEventListener('fetch', function(event) {
     event.respondWith(
         fetch(event.request)
-            .catch(() => new Response("offline."))
+            .catch(() => new Response("offline.", { status: 502 }))
     );
 });
